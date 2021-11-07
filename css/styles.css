@@ -31,3 +31,6 @@
     background-color: #e71934;
     color: white;
   }
+  h3 {
+    display: none;
+  }
