@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  $('#water').hide();
-  $('#tea').hide();
-  $('#coffee').hide();
+  $('#lang1').hide();
+  $('#lang2').hide();
+  $('#lang3').hide();
 
   $("#question1").submit(function(event) {
 
@@ -22,13 +22,13 @@ $(document).ready(function() {
 
    if (price >= 3 && price <= 8) {
       console.log(">=3 && <= 8");
-      $('#water').show();
+      $('#lang1').show();
     } else if (price >= 8 && price<=13) {
       console.log(">=8 && <= 13");
-      $('#tea').show();
+      $('#lang2').show();
     } else if (price >= 13) {
       console.log(">=13");
-      $('#coffee').show();
+      $('#lang3').show();
     }
 
 
@@ -39,8 +39,8 @@ $(document).ready(function() {
   });
 
   $("#goaway").click(function() {
-    $('#water').hide("");
-    $('#tea').hide("");
-    $('#coffee').hide("");
+    $('#lang1').hide("");
+    $('#lang2').hide("");
+    $('#lang3').hide("");
     });
 }); 
