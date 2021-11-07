@@ -25,7 +25,7 @@ Users will first be guided to a landing page where they will have the option to 
 
 * If you are unsure about your results, you may click the "Reset Form" and try new responses for a different answer.
 
-* Use this link: https://nconn34.github.io/portfolio/
+* Use this link: https://nconn34.github.io/programminglanguagesuggester/
 
 
 You will want to clone this from the repository as is!
