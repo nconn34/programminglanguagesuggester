@@ -3,7 +3,9 @@ $(document).ready(function() {
   $('#tea').hide();
   $('#coffee').hide();
 
-  $("form#question1").submit(function() {
+  $("#question1").submit(function(event) {
+
+    event.preventDefault()
   
     const quest1 = parseInt($("#quest1").val());
     const quest2 = parseInt($("#quest2").val());
@@ -15,10 +17,6 @@ $(document).ready(function() {
 
 
     let price = quest1+quest2+quest3+quest4+quest5
-
-   // $("#rate").text(price);
-   // $("#quote").show();
-    
 
 
 
@@ -33,9 +31,16 @@ $(document).ready(function() {
       $('#coffee').show();
     }
 
-    
-    event.preventDefault();
-    document.getElementById(document).reset();
+
+    console.log($('#question1'));
+;
+
 
   });
-});
+
+  $("#goaway").click(function() {
+    $('#water').hide("");
+    $('#tea').hide("");
+    $('#coffee').hide("");
+    });
+}); 
